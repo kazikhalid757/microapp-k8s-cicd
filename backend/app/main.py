@@ -32,6 +32,10 @@ else:
 def home():
     return 'Hello from Flask Backend!'
 
+@app.route('/test')
+def test():
+    return 'Test API End point!'
+
 @app.route('/products')
 def get_products():
     conn = get_db_connection()
