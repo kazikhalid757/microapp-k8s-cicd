@@ -30,9 +30,3 @@ jobs:
           docker build -t ${{ secrets.DOCKER_USERNAME }}/backend ./backend
           docker push ${{ secrets.DOCKER_USERNAME }}/backend
 
-      - name: Deploy to Cluster
-        run: |
-          kubectl config use-context minikube
-          helm upgrade --install frontend ./helm/frontend
-          helm upgrade --install backend ./helm/backend
-          helm upgrade --install postgres ./helm/postgres
