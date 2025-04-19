@@ -2,7 +2,7 @@ replicaCount: 1
 image:
   repository: kazitamim757/frontend
   tag: latest
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 service:
   type: ClusterIP
   port: 80
