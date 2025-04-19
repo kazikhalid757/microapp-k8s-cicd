@@ -9,8 +9,8 @@ def get_db_connection():
     try:
         conn = psycopg2.connect(
             dbname="microapp",   # Your database name
-            user="postgres",     # Your PostgreSQL username
-            password="example",  # Your PostgreSQL password
+            user="myuser",     # Your PostgreSQL username
+            password="mypassword",  # Your PostgreSQL password
             host="localhost",    # PostgreSQL host (change this if you're using Docker/Kubernetes)
             port="5432"          # Default PostgreSQL port
         )
