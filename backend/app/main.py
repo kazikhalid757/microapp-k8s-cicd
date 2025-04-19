@@ -11,7 +11,7 @@ def get_db_connection():
             dbname="microapp",   # Your database name
             user="myuser",     # Your PostgreSQL username
             password="mypassword",  # Your PostgreSQL password
-            host="localhost",    # PostgreSQL host (change this if you're using Docker/Kubernetes)
+            host="postgres",    # PostgreSQL host (change this if you're using Docker/Kubernetes)
             port="5432"          # Default PostgreSQL port
         )
         return conn
