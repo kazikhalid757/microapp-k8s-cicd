@@ -1,0 +1,2 @@
+-- SQL init script
+CREATE TABLE IF NOT EXISTS example (id SERIAL PRIMARY KEY, name TEXT);

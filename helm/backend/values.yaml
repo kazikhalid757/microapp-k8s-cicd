@@ -1,0 +1,14 @@
+replicaCount: 1
+image:
+  repository: your-dockerhub/backend
+  tag: latest
+  pullPolicy: IfNotPresent
+service:
+  type: ClusterIP
+  port: 5000
+resources: {}
+autoscaling:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 3
+  targetCPUUtilizationPercentage: 50
